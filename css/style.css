@@ -1,0 +1,112 @@
+body {margin: 0 0;
+    width: 100%; 
+    font-family: 'Roboto'; 
+    color: #33393b;
+    background-color: #f1f0e2;}
+h1 {font-family: 'Roboto Slab'; 
+        color: #33393b; 
+        font-size: 48px; 
+        font-weight: 400; 
+        margin-bottom: -1%;} 
+p {line-height: 1.5em;}
+.ornament {width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12%;}
+.ornament img {margin: 0 auto;}
+
+    /* Navigation stuff */
+.topNav {position: fixed; 
+    z-index: 1;
+    width: 100%; 
+    height: 68px; 
+    background-color: #133955; 
+    padding: 10px; 
+    display: inline-flex;
+    }
+.topNav img {float: left; 
+    margin: 0 40px;}
+.topNav h2 {color: #f1f0e2;   
+    font-family: 'Roboto Slab'; 
+    font-weight: 300; 
+    font-size: 32px;
+    margin-right: 200px;}
+.topNav ul {font-family: 'Roboto';
+    margin: 44px;}
+.topNav li {display: inline; 
+    color: #f1f0e2; 
+    margin-right: 80px;}
+.topNav li:hover {color:#fca289; font-weight: 700;}
+
+    /* Hero area stuff */
+#heroImg {position: relative; 
+    height: 300px; 
+    padding: 10% 18%; 
+    display: flex;}
+.iAm img {padding-right: 30px;}
+.iAm button {background-color: #133955; 
+    border: 1px none #133955; 
+    border-radius: 12px; 
+    padding: 6px; 
+    font-family: 'Roboto Slab'; 
+    font-weight: 500; 
+    color: #f1f0e2;}
+.iAm button:hover {background-color: #fca289;
+    color: #133955;}
+
+    /* Diamond divider */
+#skills {padding: 2% 16%;}
+#uxDiamonds {padding: 2% 32%;}
+.diamonds img {height: 60px;}
+
+/* Synopses */
+#synopses {padding: 2% 12%;
+    display: flex;
+    margin-bottom: 6%;}
+#synopses div {padding: 0 2%;}
+#synopses h4 {margin-bottom: -1%;}
+#synopses p {line-height: 1.25em;}
+
+/* uxUI */
+#uxUI {padding: 6% 18% 2% 18%; 
+    display: flex;
+    margin-bottom: 2%;}
+#uxUI img {padding-right: 30px;}
+#uxSkills {padding: 2% 12%;
+    display: flex;
+    margin-bottom: 6%;}
+#uxSkills div {padding: 0 2%;}
+#uxSkills h4 {margin-bottom: -1%;}
+#uxSkills p {line-height: 1.25em;}
+.myUXUIWork {padding: 0 10%;
+    flex-direction: row;
+    width: 100%;
+    display: flex;}
+.workGrid {width: 50%;}
+.workGridText {width: 555px;}
+/* graphicDesign */ 
+#graphicDesign {padding: 8% 25%; 
+    display: flex;
+    margin-bottom: 6%;}
+#graphicDesign img{padding-right: 30px;}
+
+/* digitalMedia */
+#digitalMedia {padding: 8% 25%; 
+    display: flex;
+    margin-bottom: 6%;}
+#digitalMedia img{padding-right: 30px;}
+
+/* illustrations */
+#illustrations {padding: 8% 25%; 
+    display: flex;
+    margin-bottom: 6%}
+#illustrations img {padding-right: 30px;}
+
+footer {width: 100%; 
+    height: 48px; 
+    padding: 10px; 
+    display: inline-flex; 
+    background-color: #133955; 
+    color: #f1f0e2;}
+footer li {color: #f1f0e2; 
+    display: inline;}
