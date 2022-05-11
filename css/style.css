@@ -3,7 +3,9 @@ body {margin: 0 0;
     font-family: 'Roboto'; 
     color: #33393b;
     background-color: #f1f0e2;}
-h1 {font-family: 'Roboto Slab'; 
+.container-fluid {display: flex;}
+h1 {
+    font-family: 'Roboto Slab'; 
         color: #33393b; 
         font-size: 48px; 
         font-weight: 400; 
@@ -54,11 +56,7 @@ p {line-height: 1.5em;}
 .iAm button:hover {background-color: #fca289;
     color: #133955;}
 
-    /* Diamond divider */
-#skills {padding: 2% 16%;}
-#uxDiamonds {padding: 2% 32%;}
-.diamonds img {height: 60px;}
-
+  
 /* Synopses */
 #synopses {padding: 2% 12%;
     display: flex;
@@ -68,14 +66,14 @@ p {line-height: 1.5em;}
 #synopses p {line-height: 1.25em;}
 
 /* uxUI */
-#uxUI {padding: 6% 18% 2% 18%; 
+#uxUI {
     display: flex;
     margin-bottom: 2%;}
-#uxUI img {padding-right: 30px;}
-#uxSkills {padding: 2% 12%;
+#uxUI img {padding-right: 2%;}
+#uxSkills {
     display: flex;
     margin-bottom: 6%;}
-#uxSkills div {padding: 0 2%;}
+
 #uxSkills h4 {margin-bottom: -1%;}
 #uxSkills p {line-height: 1.25em;}
 .myUXUIWork {padding: 0 10%;
@@ -84,6 +82,7 @@ p {line-height: 1.5em;}
     display: flex;}
 .workGrid {width: 50%;}
 .workGridText {width: 555px;}
+
 /* graphicDesign */ 
 #graphicDesign {padding: 8% 25%; 
     display: flex;
