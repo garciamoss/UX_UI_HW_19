@@ -4,6 +4,7 @@
         <title>
             SpanishMoss' Portfolio Page
         </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <style>
@@ -11,92 +12,222 @@
               background-image: url('images/diamondDeco2.png');
               background-attachment: fixed;
             }
-            </style>
+            .flip-card {
+                background-color: transparent;
+                width: 100%;
+                height: 21.25em;
+                perspective: 1000px;
+                display: inline-flex;
+                }
+            .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            }
+            .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            }
+            .flip-card-front, .flip-card-back {
+            position: absolute;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 2.4%;
+            }
+            .flip-card-front {
+            background-color: #bbb;
+            color: black;
+            }
+            .flip-card-back {
+            background-color: #133955;
+            padding: .875em;
+
+            color: #f1f0e2;
+            transform: rotateY(180deg);
+            }
+        </style>
     </head>
     <body>
         <!--Do the navigation here. Include name, taxonomy, KISS-->
-        <header class="topNav">
-                <img src="images/logoSmall.png"; height: 71px; width: 93px; alt="Spanish Moss logo";>
-                <h2>Spanish Moss Creative</h2>
-             <ul>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+            <a class="navbar-brand" href="#"><img src="images/logoSmall.png">Spanish Moss Creative</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><img src="images/about.png" class="icon">Here's the Lowdown… <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Portfolio.png" class="icon">Creative Stuff</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                      <a class="dropdown-item" href="#uxUI"><img src="images/uxuiIcon.png" class="icon">UX | UI</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#graphicDesign"><img src="images/design.png" class="icon">Graphic Design</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#digitalMedia"><img src="images/web.png" class="icon">Digital Media</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#illustrations"><img src="images/illustrationIcon.png" class="icon">Illustration</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/communication.png" class="icon">Let's Talk</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="tel:14044328002"><img src="images/iphone-x.png" class="icon">Text/Call</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="mailto:lisa@spanishmosscreative.net?subject=Join%20our%20team!"><img src="images/send.png" class="icon" target="_blank">Drop a Line</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/lisagarciamoss/" target="_blank">Connect@<img src="images/linkedin-circled.png" class="icon"></a>
+                  </div>
+                </li>
+               </ul>
+            </div>
+          </nav>
+          
         <!--Do the hero content here.-->
         <section id="heroImg";>
-                <div class="iAm img">
-                    <img src="images/LKGMspain.png">
-                </div>
-                <div class="iAm content">
-                    <h1>Hi, I'm Lisa.</h1>
-                    <p>
-                        As a freelancing Atlanta-based designer/illustrator, I have over ten years’ experience creating visually appealing illustrations, logos, printed ephemera, and websites for various small- and medium-sized businesses and nonprofits. After graduating from Georgia Tech’s UX | UI Bootcamp in June 2022, I hope to join your team as a newly minted User Experience | User Interface Designer and researcher. 
-                    </p>
-                    <button a href="images/LGMportfolio07032020.pdf">Download Resumé</button>
-                </div>
+            <div class="iAm img">
+                <img src="images/LKGMspain.png">
             </div>
-        </section>
-                <!--Recent Stuff: UX|UI such as Third Group Project (tbd), HCC, DoL-->
-        <section id="uxUI">
-            <div class="container-fluid"></div><div class="uxUI img">
-                <img src="images/uxUI.png">
-            </div>
-            <div class="uxUI content">
-                <h1>UX | UI</h1>
+            <div class="iAm content">
+                <h1>Hi, I'm Lisa.</h1>
                 <p>
-                    User-centric design and experience isn’t new—Louis Sullivan’s maxim <b><em>form follows function</em></b> is over a century old, and applicable to disciplines from modern architecture to information architecture. My career in visual communication has led me to question the purpose of design for its intended recipients. Learning and training in UX | UI’s research and best practices have allowed me to adopt better methods to create more effective designs within a team. Please click on the thumbnails to view more extensive work on these case studies.
+                    As a freelancing Atlanta-based designer/illustrator, I have over ten years’ experience creating visually appealing illustrations, logos, printed ephemera, and websites for various small- and medium-sized businesses and nonprofits. After graduating from Georgia Tech’s UX | UI Bootcamp in June 2022, I hope to join your team as a newly minted User Experience | User Interface Designer and researcher. 
                 </p>
+                <button>
+                    <a href="images/LGMportfolio07032020.pdf" target="_blank" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download');">Download Resumé</a>
+                </button>            
             </div>
+        </section>
         
-        </section>
-        <section id="uxSkills">
-            <div class="education">
-                <h4>User Research</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            </div>
-            <div class="career">
-                <h4>User Interface Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-            </div>
-            <div class="skills">
-                <h4>Web Development</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-            </div>
-        </section>
-
-        <!--  My UX Skills section coded using CSS flex -->
-
-        <section class="myUXUIWork">
-            <div class="workGrid">
-                <div class="workGridImg">
-                    <img src="images/HCC.png">
+        <!--Recent Stuff: UX|UI such as Third Group Project (tbd), HCC, DoL-->
+        <section id="uxUI">
+            <div class="container">
+                <div class="uxUI img">
+                    <h1><img src="images/uxUI.png">UX | UI</h1>
                 </div>
-                <div class="workGridText">
-                    <h4>Nonprofit Redesign</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. </p>
-                    <button></button>
+        <!--  My UX Skills section coded using CSS flex and Bootstrap cards-->
+                
+                    
+                        <div class="row showsNear">
+                          <!-- Card 1 -->
+                          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <img src="images/userResearch.png" alt="User Research">  </div>
+                                      <div class="flip-card-back">
+                                        <p><em>Know Your Audience</em>. Though I've been mindful of this maxim since design school, UX|UI Bootcamp has taken me to a deeper, more rigorous user research. Methods such as Competitor Analysis, User Interviews, Personas, Affinity Diagrams and Empathy Maps allow me to both grow creatively as a designer and develop better insight as a sort of social scientist.</p> 
+                                       </div>
+                                    </div>
+                                  </div>
+                              <div class="card-body">
+                                <h5 class="card-title">User Research</h5>
+                                <img src="images/miro.png" class="icon">
+                                <img src="images/googleSheets.png" class="icon">
+                                <img src="images/googleDocs.png" class="icon">
+                                <img src="images/googleSlides.png" class="icon">   
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End card 1 -->
+                  
+                          <!-- Card 2 -->
+                          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <img src="images/prototyping.png" alt="User Research"></div>
+                                      <div class="flip-card-back">
+                                        <p>Through development techniques and collaboration/coordination with team members and stakeholders, I sketch prototypes then digitally iterate those via InVision, Figma, and XD.<b>Bottom line:</b> Form and function must also meet the needs of both user and stakeholder.</p> 
+                                       </div>
+                                    </div>
+                                  </div>
+                              <div class="card-body">
+                                <h5 class="card-title">User Interface Design
+                                </h5>
+                                <p class="card-text"></p>
+                                <img src="images/inVision.png" class="icon">
+                                <img src="images/figma.png" class="icon">
+                                <img src="images/XD.png" class="icon">
+                            </div>
+                            </div>
+                          </div>
+                          <!-- End card 2 -->
+                  
+                          <!-- Card 3 -->
+                          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <img src="images/webDesign.png" alt="User Research"></div>
+                                      <div class="flip-card-back">
+                                        <p>HTML 5, CSS 3, jQuery, and Bootstrap/Responsive Design; this portfolio site is just the latest undertaking. Please peruse the case studies below for further details how these projects developed from briefs to high fidelity designs that are both visually appealing and technically practical.</p> 
+                                       </div>
+                                    </div>
+                                  </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text"></p>
+                                <img src="images/html.png" class="icon">
+                                <img src="images/css.png" class="icon">
+                                <img src="images/js.png" class="icon">
+                                <img src="images/bootStrap.png" class="icon">   
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End card 3 -->
+                        </div>
+                    
+                
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="images/HCC.png">                     
+                    </div>
+                      <div class="col">
+                        <h4>Himalayan Children's Charities</h4>
+                        <p>Minimal use of photos, text-heavy content, and inadequate navigation of the site were the major pain points. Direct collaboration with HCC's founder, stunning photographs of the HCC students and the Himalayan scenery, and infographics improved the site’s aesthetics, content, and navigation. Click below for a detailed narrative.</p>
+                        <button>Navigating Our Way</button>                      
+                     </div>
+                    </div>
                 </div>
-            </div>
-            <div class="workGrid">
-                <div class="workGridImg">
-                    <img src="images/USDOL.png">
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="images/protypesDOL.png">                     
+                    </div>
+                      <div class="col">
+                        <h3>Department of Labor</h3>
+                        <p>Broken links, uninformative taxonomy, and navigation disorientation are only a few of challenges encountered by visitors entering this labyrinth that is the DOL site. Less text and more photos/infographics, and user-centric content/navigation are among the solutions to tackle this behemoth. </p>
+                        <button>Taking the Minotaur by the Horns</button>
+                      </div>
+                    </div>
                 </div>
-                <div class="workGridText">
-                    <h4></h4>
-                    <p></p>
-                    <button></button>
-                </div>
-            </div>
-            <div class="workGrid">
-                <div class="workGridImg">
-                    <img>
-                </div>
-                <div class="workGridText">
-                    <h4></h4>
-                    <p></p>
-                    <button></button>
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="images/genericPlaceholder.jpeg">                     
+                    </div>
+                      <div class="col">
+                        <h3>TBD</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        <button>I Have No Idea</button>                      </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,5 +281,14 @@
         <footer class="bottomNav">
             <p> Copyright 2022. Lisa Garcia Moss. All rights reserved.</p>
         </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
     </body>
 </html>

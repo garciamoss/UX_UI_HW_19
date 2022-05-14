@@ -1,87 +1,149 @@
-body {margin: 0 0;
+html {
+    scroll-behavior: smooth;
+  }
+body {margin: 0 auto;
     width: 100%; 
     font-family: 'Roboto'; 
     color: #33393b;
     background-color: #f1f0e2;}
-.container-fluid {display: flex;}
+.container-fluid {
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;}
+.container {margin: 0 auto;}
 h1 {
     font-family: 'Roboto Slab'; 
         color: #33393b; 
         font-size: 48px; 
         font-weight: 400; 
-        margin-bottom: -1%;} 
+        margin-bottom: 1%;} 
 p {line-height: 1.5em;}
-.ornament {width: 100%;
+.icon {
+    width: 48px;
+    border: none;
+}
+button {
+    background-color: #133955; 
+    border: 1px none #133955; 
+    border-radius: 8px; 
+    padding: 6px; 
+    font-family: 'Roboto Slab'; 
+    font-weight: 500;
+    font-size: small;
+    color: #fff;
+    letter-spacing: .0625em; 
+    }
+button:hover {
+    background-color: #fca289;
+    color: #133955;}
+.btn-bd-primary {
+        font-weight: 600;
+        color: #f1f0e2;
+        background-color: #133955;
+}
+.btn-bd-primary:hover {
+    background-color: #fca289;
+}
+.ornament {
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 12%;}
+    margin-bottom: 12%;
+}
 .ornament img {margin: 0 auto;}
 
     /* Navigation stuff */
-.topNav {position: fixed; 
-    z-index: 1;
-    width: 100%; 
-    height: 68px; 
-    background-color: #133955; 
-    padding: 10px; 
-    display: inline-flex;
+.customNav {
+        position: fixed;
+        width: 100%;
+        background-color: #133955 !important;
+        z-index: 10;
+        }
+.navbar-nav {
+            margin-left: auto;
+            margin-right: 0 !important;
+            }
+.navbar-brand {
+    font-family: 'Roboto Slab';
+    font-size: 1.6em;
+}
+.navbar-brand img {
+                padding-right: 15px;
+                width: 65px;
+              }
+.navbar-light .navbar-toggler-icon{
+    background-image: url('../images/menu.png');
+}
+.nav-item {
+                margin: 0px 2.4em;
+              }
+.nav-item img {
+    height: 23px;
+    width: auto;
+    padding-right: .75em;}
+.dropdown-menu {
+    background-color: #133955 !important;
+    color: #f1f0e2 !important;
+    align-items: center;
     }
-.topNav img {float: left; 
-    margin: 0 40px;}
-.topNav h2 {color: #f1f0e2;   
-    font-family: 'Roboto Slab'; 
-    font-weight: 300; 
-    font-size: 32px;
-    margin-right: 200px;}
-.topNav ul {font-family: 'Roboto';
-    margin: 44px;}
-.topNav li {display: inline; 
-    color: #f1f0e2; 
-    margin-right: 80px;}
-.topNav li:hover {color:#fca289; font-weight: 700;}
+.dropdown-menu img {
+    padding-right: .75em;
+    height: 23px;
+    width: auto;}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #133955 !important;
+        text-decoration: none;
+        background: #fca289;
+              }
+.customNav a {
+    color: #f1f0e2 !important;
+                }
 
     /* Hero area stuff */
-#heroImg {position: relative; 
-    height: 300px; 
-    padding: 10% 18%; 
+#heroImg {
+    position: relative; 
+    height: auto; 
+    padding: 20% 20%; 
     display: flex;}
 .iAm img {padding-right: 30px;}
-.iAm button {background-color: #133955; 
-    border: 1px none #133955; 
-    border-radius: 12px; 
-    padding: 6px; 
-    font-family: 'Roboto Slab'; 
-    font-weight: 500; 
-    color: #f1f0e2;}
-.iAm button:hover {background-color: #fca289;
-    color: #133955;}
 
-  
-/* Synopses */
-#synopses {padding: 2% 12%;
-    display: flex;
-    margin-bottom: 6%;}
-#synopses div {padding: 0 2%;}
-#synopses h4 {margin-bottom: -1%;}
-#synopses p {line-height: 1.25em;}
 
 /* uxUI */
 #uxUI {
     display: flex;
     margin-bottom: 2%;}
-#uxUI img {padding-right: 2%;}
+#uxUI img {
+    margin-bottom: 3%;}
 #uxSkills {
     display: flex;
-    margin-bottom: 6%;}
+    margin: 0 auto;
+}
 
-#uxSkills h4 {margin-bottom: -1%;}
-#uxSkills p {line-height: 1.25em;}
-.myUXUIWork {padding: 0 10%;
-    flex-direction: row;
-    width: 100%;
-    display: flex;}
-.workGrid {width: 50%;}
-.workGridText {width: 555px;}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: 0.5rem;
+}
+.card img {
+    border: 1px solid rgba(51,57,59,.5);
+    border-radius: 2.4%;;
+}
+.card .icon {
+    border: 0px;
+}
+.card-body {
+    background-color: transparent !important;
+}
 
 /* graphicDesign */ 
 #graphicDesign {padding: 8% 25%; 
