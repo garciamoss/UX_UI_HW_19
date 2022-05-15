@@ -1,5 +1,5 @@
 console.log("Your index.js file is loaded correctly");
 
-$("#heroImg").click(function(){
-    $("p").slideToggle("slow");
+$("#heroImg img").click(function(){
+    $(".iAm p").slideToggle("slow");
   });
