@@ -17,9 +17,6 @@ button:hover {background-color: #fca289;color: #133955;}
 .btn-bd-primary {font-weight: 600;color: #f1f0e2; background-color: #133955;}
 .btn-bd-primary:hover {background-color: #fca289; color: #133955;}
 
-/* The "show" class is added to the filtered elements */
-.show {display: block;}
-
 
 /* Navigation*/
 .customNav {position: fixed; width: 100%; background-color: #133955 !important; z-index: 10;}
@@ -52,6 +49,9 @@ button:hover {background-color: #fca289;color: #133955;}
 /*Portfolio Galleries*/
 * {box-sizing: border-box;}
 .show {display: block;}
+.btn {border: none; outline: none; padding: 12px 16px; background-color: #133955 !important; color: #f1f0e2 !important;}
+.btn:hover {background-color: #fca289 !important; color: #133955 !important;}
+.btn .active { background-color: #666; color: #f1f0e2;}
 
 /* graphicDesign */ 
 
@@ -71,6 +71,7 @@ button:hover {background-color: #fca289;color: #133955;}
     @media (max-width: 575.98px) {
         h1 {font-size: 2.5rem !important;}
         img {max-width: 350px;}
+       
     }
     
         /*Small devices (landscape phones, 576px and up*/
