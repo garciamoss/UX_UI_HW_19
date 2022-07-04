@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>
             SpanishMoss' Portfolio Page
         </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta content="Webflow" name="generator">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/webflow.css" rel="stylesheet" type="text/css">
+        <link href="css/lisas-dynamite-project-be-79c4d60ac035b.webflow.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <style>
             body {
-              background-image: url('images/diamondDeco2.png');
-              background-attachment: fixed;
-            }
-            .flip-card {
-                background-color: transparent;
-                width: 100%;
-                height: 20em;
-                perspective: 1000px;
-                display: inline-flex;
-                }
-            .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: left;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            }
-            .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-            }
+              background-image: url('images/diamondDeco2.png'); background-attachment: fixed;}
+            .flip-card {background-color: transparent; width: 100%; height: 20em; perspective: 1000px; display: inline-flex;}
+ 
             .flip-card-front, .flip-card-back {
             position: absolute;
             display: flex;
@@ -37,26 +26,15 @@
             justify-content: center;
             flex-direction: column;
             width: 100%;
-            height: 100%;
+            height: 20em;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             border-radius: 2.4%;
             }
-            .flip-card-front {
-            background-color: #bbb;
-            color: black;
-            }
-            .flip-card-back {
-            background-color: #133955;
-            padding: .875em;
-
-            color: #f1f0e2;
-            transform: rotateY(180deg);
-            }
         </style>
     </head>
     <body>
-        <!--Do the navigation here. Include name, taxonomy, KISS-->
+        <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
             <a class="navbar-brand" href="#"><img src="images/logoSmall.png">Spanish Moss Creative</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -66,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#"><img src="images/about.png" class="icon">Here's the Lowdown… <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#"><img src="images/about.png" class="icon">Download the Lowdown <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Portfolio.png" class="icon">Creative Stuff</a>
@@ -95,176 +73,412 @@
             </div>
         </nav>
           
-        <!--Do the hero content here.-->
-        <section id="heroImg";>
-            <div class="iAm img">
-                <img src="images/LKGMclick.png">
-                <!--Click the self-portrait to hide the accompanying <p>-->
-            </div>
-            <div class="iAm content">
-                <h1>Hi, I'm Lisa.</h1>
-                <!--Hide paragraph when image is clicked-->
-                <p>
-                    As a freelancing Atlanta-based designer/illustrator, I have over ten years’ experience creating visually appealing illustrations, logos, printed ephemera, and websites for various small- and medium-sized businesses and nonprofits. After graduating from Georgia Tech’s UX | UI Bootcamp in June 2022, I hope to join your team as a newly minted User Experience | User Interface Designer and researcher. 
-                </p>
-                <button>
-                    <a href="images/LGMportfolio07032020.pdf" target="_blank" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download');">Download Resumé</a>
-                </button>            
-            </div>
-        </section>
+        <!--Jumbo-->
+        <div class="jumbotron">
+          <div class="container">
+            <img src="images/LKGMspain.png"><h1 class="display-4"><b>Hi, I'm Lisa.</b></h1>
+            <p class="lead"> I am a designer who researches user experiences, creates compelling user personas and narratives, and collaborates with team members and stakeholders to develop better products.</p>
+            <p>Download my résumé, and let's start collaborating!</p>
+            <p class="lead">
+              <a class="btn btn-bd-primary" href="images/LGM06242022Portfolio.pdf" target="_blank" role="button">Download Résumé</a>
+            </p>
+          </div>
+        </div>
         
-        <!--Recent Stuff: UX|UI such as Third Group Project (tbd), HCC, DoL-->
+        <!--UX|UI-->
         <section id="uxUI">
             <div class="container">
                 <div class="uxUI img">
                     <h1><img src="images/uxUI.png">UX | UI</h1>
                 </div>
-        <!--  My UX Skills section coded using CSS flex and Bootstrap cards-->
-                
-        <div class="container">
-                        <div class="row">
-                          <!-- Card 1 -->
-                          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front" background>
-                                        <img src="images/userResearch.png" alt="User Research">  </div>
-                                      <div class="flip-card-back">
-                                        <p><em>Know Your Audience</em>. Though I've been mindful of this maxim since design school, UX|UI Bootcamp has taken me to a deeper, more rigorous user research. Methods such as Competitor Analysis, User Interviews, Personas, Affinity Diagrams and Empathy Maps allow me to both grow creatively as a designer and develop better insight as a sort of social scientist.<br><br>
-                                        <img src="images/miro.png" class="icon">
-                                        <img src="images/googleSheets.png" class="icon">
-                                        <img src="images/googleDocs.png" class="icon">
-                                        <img src="images/googleSlides.png" class="icon"></p> 
-                                       </div>
-                                    </div>
-                                  </div>
+        <!-- Skill Cards-->
+                <h2>Some hard-earned UX skills here… </h2>
+                <div class="row">
+                  <!-- Card 1 -->
+                  <div class="cardContainer col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front" background>
+                                <img src="images/userResearch.png" alt="User Research"> </div>
+                              <div class="flip-card-back">
+                                 
+                              </div>
                             </div>
                           </div>
-                          <!-- End card 1 -->
-                  
-                          <!-- Card 2 -->
-                          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front">
-                                        <img src="images/prototyping.png" alt="User Research"></div>
-                                      <div class="flip-card-back">
-                                        <p>Through development techniques and collaboration/coordination with team members and stakeholders, I sketch prototypes then digitally iterate those via InVision, Figma, and XD.<b>Bottom line:</b> Form and function must also meet the needs of both user and stakeholder.<br><br>
-                                          <img src="images/inVision.png" class="icon">
-                                          <img src="images/figma.png" class="icon">
-                                          <img src="images/XD.png" class="icon"></p> 
-                                       </div>
-                                    </div>
-                                  </div>
-                              
-                            </div>
-                          </div>
-                          <!-- End card 2 -->
-                  
-                          <!-- Card 3 -->
-                          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front">
-                                        <img src="images/webDesign.png" alt="User Research"></div>
-                                      <div class="flip-card-back">
-                                        <p>HTML 5, CSS 3, jQuery, and Bootstrap/Responsive Design; this portfolio site is just the latest undertaking. Please peruse the case studies below for further details how these projects developed from briefs to high fidelity designs that are both visually appealing and technically practical.<br><br><img src="images/html.png" class="icon">
-                                          <img src="images/css.png" class="icon">
-                                          <img src="images/js.png" class="icon">
-                                          <img src="images/bootStrap.png" class="icon"></p> 
-                                       </div>
-                                    </div>
-                                  </div>
-                              
-                            </div>
-                          </div>
-                          <!-- End card 3 -->
-                        </div>
-        </div>
-                
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col">
-                        <img src="images/protypesDOL.png">                     
                     </div>
-                      <div class="col">
-                        <h3>Department of Labor</h3>
-                        <p>Broken links, uninformative taxonomy, and navigation disorientation are only a few of challenges encountered by visitors entering this labyrinth that is the DOL site. Less text and more photos/infographics, and user-centric content/navigation are among the solutions to tackle this behemoth. </p>
-                        <button><a href="https://garciamoss.github.io/UX_UI_HW_20/">Taking the Minotaur by the Horns</a></button>
-                      </div>
+                  </div>
+                  <!-- End card 1 -->
+          
+                  <!-- Card 2 -->
+                  <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/prototyping.png" alt="User Research"></div>
+                              <div class="flip-card-back">
+                                
+                              </div>
+                            </div>
+                          </div>
+                      
                     </div>
+                  </div>
+                  <!-- End card 2 -->
+          
+                  <!-- Card 3 -->
+                  <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/webDesign.png" alt="User Research"></div>
+                              <div class="flip-card-back">
+                                
+                              </div>
+                            </div>
+                          </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End card 3 -->
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <img src="images/HCC.png">                     
+        <!--Case Studies-->
+                <h2>…and the case studies where I cut my UI teeth </h2>
+                <div class="row dol">
+                  <div class="col">
+                    <img src="images/usdolComplete.png">                     
+                </div>
+                  <div class="col">
+                    <h4>U.S. Department of Labor</h4>
+                    <p>Broken links, uninformative taxonomy, and navigation disorientation are only a few of challenges encountered by visitors entering this labyrinth that is the DOL site. Less text and more photos/infographics, and user-centric content/navigation are among the solutions to tackle this behemoth. </p>
+                    <button><a href="https://garciamoss.github.io/UX_UI_HW_20/">Taking the Minotaur by the Horns</a></button>
                   </div>
-                    <div class="col">
-                      <h4>Himalayan Children's Charities</h4>
-                      <p>Minimal use of photos, text-heavy content, and inadequate navigation of the site were the major pain points. Direct collaboration with HCC's founder, stunning photographs of the HCC students and the Himalayan scenery, and infographics improved the site’s aesthetics, content, and navigation. Click below for a detailed narrative.</p>
-                      <button>Navigating Our Way</button>                      
-                   </div>
-                  </div>
-              </div>
-                <div class="container">
-                    <div class="row">
-                      <div class="col">
-                        <img src="images/genericPlaceholder.jpeg">                     
-                    </div>
-                      <div class="col">
-                        <h3>TBD</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                        <button>I Have No Idea</button>                      </div>
-                    </div>
+                </div>
+                <div class="row airGA">
+                  <div class="col">
+                    <img src="images/AirGeorgia.png">                     
+                </div>
+                  <div class="col">
+                    <h4>AirGeorgia AAMP</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    <button>Know Which Way the Wind Blows</button>                      </div>
+                </div>
+                <div class="row hcc">
+                  <div class="col">
+                    <img src="images/hccComplete.png">                     
+                </div>
+                  <div class="col">
+                    <h4>Himalayan Children's Charities</h4>
+                    <p>Minimal use of photos, text-heavy content, and inadequate navigation of the site were the major pain points. Direct collaboration with HCC's founder, stunning photographs of the HCC students and the Himalayan scenery, and infographics improved the site’s aesthetics, content, and navigation. Click below for a detailed narrative.</p>
+                    <button>Navigating Our Way</button>                      
+                 </div>
                 </div>
             </div>
         </section>
         
-         <!--Graphic Design stuff, such as logos, websites, nonprofit projects, a little motion graphics, PowerPoint decks-->
+         <!--Graphic Design-->
         <section id="graphicDesign">
+          <div class="container">
             <div class="graphicDesign img">
-                <img src="images/graphicDesign.png">
+              <h1><img src="images/graphicDesign.png">Graphic Design</h1>
             </div>
             <div class="graphicDesign content">
-                <h1>Graphic Design</h1>
+                
                 <p>Logos to letterheads, packaging to publications—examples of graphic design are found everywhere! Finding the ideal combination of layout, typography, color, and images can transform  any printed or digital piece from mundane to marvelous. Click on any thumbnail to view more extensive work.</p>
             </div>
+            <h2>PORTFOLIO</h2>
+              <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('logo')"> Logos</button>
+                <button class="btn" onclick="filterSelection('tShirt')"> T-Shirt Design</button>
+                <button class="btn" onclick="filterSelection('poster')"> Posters</button>
+                <button class="btn" onclick="filterSelection('packaging')"> Packaging</button>
+              </div>
+              <!-- Portfolio Gallery Grid -->
+              <div class="row">
+                <div class="col-md-4 logo">
+                  <div class="content">
+                    <img src="images/image2.jpg" alt="Continental Cuisine logo" style="width:100%">
+                    <h4>Continental Cuisine</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 logo">
+                  <div class="content">
+                    <img src="images/soga.png" alt="LETR logos" style="width:100%">
+                    <h4>LETR logos</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 logo">
+                  <div class="content">
+                    <img src="images/pamperedPooch.jpg" alt="Pampered Pooches Day" style="width:100%">
+                    <h4>Pampered Pooches Day</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 tShirt">
+                  <div class="content">
+                    <img src="images/image1.jpg" alt="ABC Bike There" style="width:100%">
+                    <h4>Atlanta Bicycle Campaign</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 tShirt">
+                  <div class="content">
+                    <img src="images/oleMiss.png" alt="Ole Miss/Ducks Unlimited" style="width:100%">
+                    <h4>Ole Miss/Ducks Unlimited</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 tShirt">
+                  <div class="content">
+                    <img src="images/ugaT.png" alt="UGA Tee-shirt" style="width:100%">
+                    <h4>UGA Spillin' the Tea</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4  poster">
+                  <div class="content">
+                    <img src="images/image11.jpg" alt="REI poster" style="width:100%">
+                    <h4>REI Poster</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4  poster">
+                  <div class="content">
+                    <img src="images/LaBoucherie.png" alt="La Boucherie" style="width:100%">
+                    <h4>La Boucherie</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4  poster">
+                  <div class="content">
+                    <img src="images/stasis.jpg" alt="Stasis" style="width:100%">
+                    <h4>Jenny Holzer Truism</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4  packaging">
+                  <div class="content">
+                    <img src="images/twinings.png" alt="Twinings Tea" style="width:100%">
+                    <h4>Twinings Tea</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4  packaging">
+                  <div class="content">
+                    <img src="images/goodEarth.png" alt="The Good Earth Trilogy" style="width:100%">
+                    <h4>The Good Earth Trilogy</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4  packaging">
+                  <div class="content">
+                    <img src="images/azzurra.png" alt="Azzurra Airlines" style="width:100%">
+                    <h4>Azzurra Brand Collateral</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              <!-- END GRID -->
+              </div>
+          </div>
         </section>
         
-        <!--Digital Media, such as websites, email templates, PowerPoint decks, landing pages-->
+        <!--Digital Media-->
         <section id="digitalMedia">
+          <div class="container">
             <div class="digitalMedia img">
-                <img src="images/digitalMedia.png">
+              <h1><img src="images/digitalMedia.png">Digital Media</h1>
             </div>
             <div class="digitalMedia content">
-                <h1>Digital Media</h1>
+                
                 <p>Responsive websites, email templates, PowerPoint decks—digital media are subjected to the same design principles as their  print equivalent. Below are examples of my successful foray into this innovative branch of visual communication. Please click on the  thumbnails to view more extensive work.</p>
             </div>
+            <h2>PORTFOLIO</h2>
+              <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('website')"> Websites</button>
+                <button class="btn" onclick="filterSelection('email')"> Email Design</button>
+                <button class="btn" onclick="filterSelection('misc')">Miscellaneous</button>
+              </div>
+              <!-- Portfolio Gallery Grid -->
+              <div class="row">
+                <div class="col-md-4 website">
+                  <div class="content">
+                    <img src="images/kingsBattery.jpg" alt="Mountains" style="width:100%">
+                    <h4>Mountains</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 nature">
+                  <div class="content">
+                    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                    <h4>Lights</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 nature">
+                  <div class="content">
+                    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                    <h4>Forest</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 email">
+                  <div class="content">
+                    <img src="images/LandRover.jpg" alt="Car" style="width:100%">
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 cars">
+                  <div class="content">
+                    <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 cars">
+                  <div class="content">
+                    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+                    <h4>Classic</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 people">
+                  <div class="content">
+                    <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 people">
+                  <div class="content">
+                    <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 people">
+                  <div class="content">
+                    <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              <!-- END GRID -->
+              </div>
+          </div>
         </section>
         
-        <!--Illustrations, such as collateral for past projects and editorials, infographs-->
+        <!--Illustrations-->
         <section id="illustrations">
+          <div class="container">
             <div class="illustrations img">
-                <img src="images/illustration.png">
+              <h1><img src="images/illustration.png">Illustrations</h1>
             </div>
             <div class="illustrations content">
-                <h1>Illustrations</h1>
+                
                 <p>The illustrations shown here are rendered in a wide variety of media—from pen & ink and colored pencils to digitally rendered paintings using a Wacom tablet with Adobe Illustrator and Photoshop. Click on any thumbnail to view more extensive work.</p>
             </div>
+            <h2>PORTFOLIO</h2>
+              <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('serial')"> Serial</button>
+                <button class="btn" onclick="filterSelection('editorial')"> Editorial</button>
+                <button class="btn" onclick="filterSelection('people')"> People</button>
+              </div>
+              <!-- Portfolio Gallery Grid -->
+              <div class="row">
+                <div class="col-md-4 serial">
+                  <div class="content">
+                    <img src="images/springer.jpg" alt="English Springer Spaniel" style="width:100%">
+                    <h4>Lifeserv Canine Purebreeds Series</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 serial">
+                  <div class="content">
+                    <img src="images/breastfeed.jpg" alt="Breastfeeding" style="width:100%">
+                    <h4>Lifeserv Breastfeeding Series</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 serial">
+                  <div class="content">
+                    <img src="images/audiology.jpg" alt="Audiology" style="width:100%">
+                    <h4>Lifeserv Human Anatomy Series</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 editorial">
+                  <div class="content">
+                    <img src="images/whoDecides.png" alt="Who Decides?" style="width:100%">
+                    <h4>Who Decides?</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 editorial">
+                  <div class="content">
+                    <img src="images/crayonsCrime.jpg" alt="Crayons and Crime" style="width:100%">
+                    <h4>Crayons & Crime</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 editorial">
+                  <div class="content">
+                    <img src="images/inJustice.jpg" alt="American Burka" style="width:100%">
+                    <h4>Justice… ?</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 people">
+                  <div class="content">
+                    <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 people">
+                  <div class="content">
+                    <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="col-md-4 people">
+                  <div class="content">
+                    <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              <!-- END GRID -->
+              </div>
+          </div>
         </section>
         
         <!--Miscellaneous-->
         <div>
 
         </div>
-        <!--Footer material, such as contact info and social media links-->
-        <footer class="bottomNav">
-            <p> Copyright 2022. Lisa Garcia Moss. All rights reserved.</p>
-        </footer>
+        <!--Footer and social media links-->
+        <nav class="navbar fixed-bottom navbar-light bg-light customNav">
+          <a class="navbar-brand" href="#">Copyright 2022. Lisa Garcia Moss</a>
+        </nav>
         
     </body>
     
