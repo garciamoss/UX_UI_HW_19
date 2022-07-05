@@ -46,20 +46,13 @@ button:hover {background-color: #fca289;color: #133955;}
 .card-body {background-color: transparent !important;}
 
 
-/*Portfolio Galleries*/
-* {box-sizing: border-box;}
-.show {display: block;}
-.btn {border: none; outline: none; padding: 12px 16px; background-color: #133955 !important; color: #f1f0e2 !important;}
-.btn:hover {background-color: #fca289 !important; color: #133955 !important;}
-.btn .active { background-color: #666; color: #f1f0e2;}
-
-/* graphicDesign */ 
+/* Graphic Design */ 
 
 
-/* digitalMedia */
+/* Digital Media */
 
 
-/* illustrations */
+/* Illustrations */
 
 
 /*Footer Section*/
