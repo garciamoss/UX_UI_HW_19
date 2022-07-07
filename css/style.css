@@ -2,13 +2,14 @@
 html {scroll-behavior: smooth;}
 body {margin: 0 auto; width: 100%; font-family: 'Roboto'; font-size: 1rem; color: #33393b; background-color: #f1f0e2;}
 .container {width: 100%; margin: 0 auto; padding-top: 4.6%;}
+section {margin-bottom: 5%;}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
 button a {color: #f1f0e2;}
 button a:hover {color: #133955;}
 h1 {font-family: 'Roboto Slab'; color: #33393b; font-size: 3rem; font-weight: 400; margin-bottom: 6%;padding-top: 3%;} 
 section h1 {text-align: center;}
-h2 {font-family: 'Roboto Slab'; color: #33393b; font-size: 2.25rem;font-weight: 400;}
+h2 {font-family: 'Roboto Slab'; color: #33393b; font-size: 2.25rem;font-weight: 400; padding-bottom: 5%;}
 p {line-height: 1.5rem;}
 .icon {width: 48px;border: none;}
 button {background-color: #133955; border: 1px none #133955; border-radius: 8px; padding: 6px; font-family: 'Roboto Slab'; font-weight: 500;
@@ -16,11 +17,13 @@ font-size: small; color: #fff; letter-spacing: .0625em;}
 button:hover {background-color: #fca289;color: #133955;}
 .btn-bd-primary {font-weight: 600;color: #f1f0e2; background-color: #133955;}
 .btn-bd-primary:hover {background-color: #fca289; color: #133955;}
+img {margin-bottom: 5%;}
 
 
 /* Navigation*/
 .customNav {position: fixed; width: 100%; background-color: #133955 !important; z-index: 10;}
 .navbar-brand {font-family: 'Roboto Slab';font-size: 1.4em;}
+.navbar-nav {margin-left: auto; margin-right: 0 !important;}
 .navbar-brand img {padding-right: 15px;width: 65px;}
 .navbar-light .navbar-toggler-icon{ background-image: url('../images/menu.png');}
 .navbar-toggler:hover {background-color: #fca289;}
