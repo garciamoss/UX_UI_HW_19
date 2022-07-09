@@ -36,12 +36,12 @@ img {margin-bottom: 5%;}
 .customNav a {color: #f1f0e2 !important;}
 
 /*Jumbotron*/
-.jumbotron {padding-top: 6rem; text-align: center; background-image: url("../images/navBanner2020.png") !important; background-size: cover !important; background-position: center; color: #f1f0e2; height: 760px; border-radius: 0%}
-.jumbotron .container {border: 1px solid #f1f0e2 !important; border-radius: 2%; max-width: 80%;}
+.jumbotron {padding-top: 6rem; text-align: center; background-image: url("../images/navBanner2020.png") !important; background-size: cover !important; background-position: center; color: #f1f0e2; height: 1000px; border-radius: 0%}
+.jumbotron .container {margin-top: 5%; border: 1px solid #f1f0e2 !important; border-radius: 2%; max-width: 80%;}
 .lead {font-size: 1.125rem; line-height: 1.625rem !important;}
 .display-4 {color: #f1f0e2; margin-bottom: 1%; padding-top: 0px;}
 .jumbotron img {margin-bottom: 0%;}
-.jumbotron .btn {border: 1px solid #f1f0e2;}
+.jumbotron .btn {border: 1px solid #f1f0e2;margin-bottom: 3%;}
 
 
 /* UX|UI */
@@ -74,6 +74,7 @@ img {margin-bottom: 5%;}
        .navbar-brand img {margin: 0%;}
        #uxUI .row {margin-bottom: 15%;}
        .custom {margin-top: -140px;}
+       .col-md-4 img {margin-bottom: 5%;}
     }
     
         /*Small devices (landscape phones, 576px and up*/
