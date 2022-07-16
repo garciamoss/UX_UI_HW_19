@@ -4,7 +4,9 @@ body {margin: 0 auto; width: 100%; font-family: 'Roboto'; font-size: 1rem; color
 .container {width: 100%; margin: 0 auto; padding-top: 4.6%;}
 section {margin-bottom: 3%;}
 a {text-decoration: none;}
-a:hover {text-decoration: none;}
+a:hover {text-decoration: none; color: #133955 !important;}
+a:visited {color: #888;}
+hr {width: 80%; border-top: 5px dotted #ccb38d !important;}
 button a {color: #f1f0e2;}
 button a:hover {color: #133955;}
 h1 {font-family: 'Roboto Slab'; color: #33393b; font-size: 3rem; font-weight: 400; margin-bottom: 3%;padding-top: 3%;} 
@@ -37,7 +39,7 @@ img {margin-bottom: 5%;}
 
 /*Jumbotron*/
 .jumbotron {padding-top: 6rem; text-align: center; background-image: url("../images/navBanner2020.png") !important; background-size: cover !important; background-position: center; color: #f1f0e2; height: 1000px; border-radius: 0%}
-.jumbotron .container {margin-top: 5%; border: 1px solid #f1f0e2 !important; border-radius: 2%; max-width: 80%;}
+.jumbotron .container {border: 1px solid #f1f0e2 !important; border-radius: 2%; max-width: 80%;}
 .lead {font-size: 1.125rem; line-height: 1.625rem !important;}
 .display-4 {color: #f1f0e2; margin-bottom: 1%; padding-top: 0px;}
 .jumbotron img {margin-bottom: 0%;}
@@ -45,8 +47,9 @@ img {margin-bottom: 5%;}
 
 
 /* UX|UI */
-.prototype:hover {background: url("../images/prototype2.png") !important;}
-#uxUI .row {margin-bottom: 5%;}
+.card {background-color: transparent !important; border: 0; margin-bottom: 8%;}
+.card-body {padding: 0;}
+#uxUI .row {margin-bottom: 8%;}
 
 
 /* Graphic Design */ 
@@ -67,15 +70,23 @@ img {margin-bottom: 5%;}
     @media (max-width: 575.98px) {
         h1 {font-size: 2.5rem !important;}
         img {max-width: 350px;margin: 0 15%;}
-       h1 img {margin: 0%;}
-       .navbar-brand img {margin: 0%;}
-       #uxUI .row {margin-bottom: 15%;}
-       .custom {margin-top: -140px;}
-       .col-md-4 img {margin-bottom: 5%;}
+        h1 img {margin: 0%;}
+        .navbar-brand img {margin: 0%;}
+        #uxUI .row {margin-bottom: 15%;}
+        #uxUI .button {margin-bottom: 15%;}
+        .card-text {margin-top: 3%;}
+        #uxUI .col {margin-bottom: 8% !important;}
+        .custom {margin-top: -140px;}
+        .col-md-4 img {margin-bottom: 5%;}
+        hr{width: 95%;}
     }
     
         /*Small devices (landscape phones, 576px and up*/
-    @media (min-width: 576px) and (max-width: 767.98px) {}
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        #uxUI .row {margin-bottom: 15%;}
+        #uxUI .button {margin-bottom: 15%;}
+        .card-text {margin-bottom: 8% !important;}
+    }
     
         /*Medium devices (tablets, 768px and up)*/
     @media (min-width: 768px) and (max-width: 991.98px) {}
